@@ -1,4 +1,4 @@
-package a01.p01;
+package a01_intro_p01;
 
 public class EncontraMenorPreco {
 

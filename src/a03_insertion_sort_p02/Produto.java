@@ -1,4 +1,4 @@
-package a01.p02;
+package a03_insertion_sort_p02;
 
 public class Produto {
 	private String nome;

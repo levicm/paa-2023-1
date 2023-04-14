@@ -1,4 +1,4 @@
-package a01.p03;
+package a01_intro_p02;
 
 public class EncontraMenorPreco {
 
@@ -12,19 +12,14 @@ public class EncontraMenorPreco {
 				
 		};
 		
-		int maisBarato = buscaMenor(produtos);
-		
-		System.out.println("O mais barato foi " + produtos[maisBarato]);
-	}
-
-	private static int buscaMenor(Produto[] produtos) {
 		int maisBarato = 0;
 		for (int atual = 0; atual < produtos.length; ++atual) {
 			if (produtos[atual].getPreco() < produtos[maisBarato].getPreco()) {
 				maisBarato = atual;
 			}
 		}
-		return maisBarato;
+		
+		System.out.println("O mais barato foi " + produtos[maisBarato]);
 	}
 
 }

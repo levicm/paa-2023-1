@@ -1,4 +1,4 @@
-package a02.p02;
+package a01_intro_p04;
 
 public class Produto {
 	private String nome;

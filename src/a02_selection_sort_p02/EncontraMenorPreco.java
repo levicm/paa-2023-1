@@ -1,4 +1,4 @@
-package a02.p02;
+package a02_selection_sort_p02;
 
 public class EncontraMenorPreco {
 

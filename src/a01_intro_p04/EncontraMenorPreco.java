@@ -1,4 +1,4 @@
-package a01.p02;
+package a01_intro_p04;
 
 public class EncontraMenorPreco {
 
@@ -9,17 +9,21 @@ public class EncontraMenorPreco {
 				new Produto("Brasilia", 16000.0),
 				new Produto("Smart", 46000.0),
 				new Produto("Fusca", 17000.0),
-				
 		};
 		
-		int maisBarato = 0;
-		for (int atual = 0; atual < produtos.length; ++atual) {
+		int maisBarato = buscaMenor(produtos, 0, produtos.length);
+		
+		System.out.println("O mais barato foi " + produtos[maisBarato]);
+	}
+
+	private static int buscaMenor(Produto[] produtos, int inicio, int fim) {
+		int maisBarato = inicio;
+		for (int atual = inicio; atual < fim; ++atual) {
 			if (produtos[atual].getPreco() < produtos[maisBarato].getPreco()) {
 				maisBarato = atual;
 			}
 		}
-		
-		System.out.println("O mais barato foi " + produtos[maisBarato]);
+		return maisBarato;
 	}
 
 }
